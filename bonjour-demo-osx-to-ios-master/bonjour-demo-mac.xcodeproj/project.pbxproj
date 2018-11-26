@@ -7,22 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B32B9CE21AC739B00A9A344 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B32B9CD21AC739B00A9A344 /* Images.xcassets */; };
 		1ABC4E091B021338007A2945 /* Array+removeObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABC4E081B021338007A2945 /* Array+removeObject.swift */; };
 		1AF39D1D1AFCE59900A5BD43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF39D1C1AFCE59900A5BD43 /* AppDelegate.swift */; };
 		1AF39D1F1AFCE59900A5BD43 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF39D1E1AFCE59900A5BD43 /* ViewController.swift */; };
-		1AF39D211AFCE59900A5BD43 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AF39D201AFCE59900A5BD43 /* Images.xcassets */; };
 		1AF39D241AFCE59900A5BD43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AF39D221AFCE59900A5BD43 /* Main.storyboard */; };
 		1AF4755A1B04BCBE00E84914 /* BonjourServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF475591B04BCBE00E84914 /* BonjourServer.swift */; };
 		1AF475661B04CED500E84914 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF475651B04CED500E84914 /* GCDAsyncSocket.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B32B9CD21AC739B00A9A344 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		1ABC4E081B021338007A2945 /* Array+removeObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+removeObject.swift"; sourceTree = "<group>"; };
 		1AF39D171AFCE59900A5BD43 /* bonjour-demo-mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "bonjour-demo-mac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AF39D1B1AFCE59900A5BD43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1AF39D1C1AFCE59900A5BD43 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1AF39D1E1AFCE59900A5BD43 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		1AF39D201AFCE59900A5BD43 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		1AF39D231AFCE59900A5BD43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1AF39D391AFCE5C300A5BD43 /* bonjour-demo-mac-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "bonjour-demo-mac-Bridging-Header.h"; sourceTree = "<group>"; };
 		1AF475591B04BCBE00E84914 /* BonjourServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BonjourServer.swift; sourceTree = "<group>"; };
@@ -65,8 +65,8 @@
 				1AF39D391AFCE5C300A5BD43 /* bonjour-demo-mac-Bridging-Header.h */,
 				1AF475591B04BCBE00E84914 /* BonjourServer.swift */,
 				1AF475641B04CED500E84914 /* GCDAsyncSocket.h */,
+				0B32B9CD21AC739B00A9A344 /* Images.xcassets */,
 				1AF475651B04CED500E84914 /* GCDAsyncSocket.m */,
-				1AF39D201AFCE59900A5BD43 /* Images.xcassets */,
 				1AF39D221AFCE59900A5BD43 /* Main.storyboard */,
 				1AF39D1A1AFCE59900A5BD43 /* Supporting Files */,
 				1AF39D1E1AFCE59900A5BD43 /* ViewController.swift */,
@@ -142,8 +142,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1AF39D211AFCE59900A5BD43 /* Images.xcassets in Resources */,
 				1AF39D241AFCE59900A5BD43 /* Main.storyboard in Resources */,
+				0B32B9CE21AC739B00A9A344 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

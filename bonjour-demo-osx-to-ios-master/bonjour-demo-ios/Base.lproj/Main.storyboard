@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item 2-->
+        <!--Answer a Question-->
         <scene sceneID="xNh-3t-X5n">
             <objects>
                 <viewController id="UUQ-vC-WL6" sceneMemberID="viewController">
@@ -20,15 +20,15 @@
                     <view key="view" contentMode="scaleToFill" id="Ksb-b6-XEn">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.21176470589999999" green="0.27058823529999998" blue="0.30980392159999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="I1R-lj-z7v"/>
+                    <tabBarItem key="tabBarItem" title="Answer a Question" id="I1R-lj-z7v"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fYU-Tf-w08" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="183" y="-272"/>
         </scene>
-        <!--Item 1-->
+        <!--Select a Class-->
         <scene sceneID="3wU-Fn-6mX">
             <objects>
                 <viewController id="Ut4-UD-07t" sceneMemberID="viewController">
@@ -39,9 +39,11 @@
                     <view key="view" contentMode="scaleToFill" id="7sM-EL-xT6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.21176470589999999" green="0.27058823529999998" blue="0.30980392159999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="c8O-Rk-blf"/>
+                    <tabBarItem key="tabBarItem" title="Select a Class" id="c8O-Rk-blf">
+                        <color key="badgeColor" red="0.18823529410000001" green="0.83529411760000005" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="66E-Fc-BEG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -55,6 +57,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" red="0.18823529410000001" green="0.83529411760000005" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="barTintColor" red="0.21176470589999999" green="0.27058823529999998" blue="0.30980392159999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="selectedImageTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
                         <segue destination="Ut4-UD-07t" kind="relationship" relationship="viewControllers" id="pHe-2r-zjZ"/>
@@ -66,7 +71,7 @@
             </objects>
             <point key="canvasLocation" x="-1201" y="128"/>
         </scene>
-        <!--Item-->
+        <!--Ask a Question-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="bonjour_demo" customModuleProvider="target" sceneMemberID="viewController">
@@ -136,7 +141,9 @@
                             <constraint firstItem="ufC-TG-GiT" firstAttribute="top" secondItem="pOp-3f-fzJ" secondAttribute="bottom" constant="18" id="mRz-0p-cl1"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="InD-V7-5s5"/>
+                    <tabBarItem key="tabBarItem" title="Ask a Question" id="InD-V7-5s5">
+                        <color key="badgeColor" red="0.94117647059999998" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </tabBarItem>
                     <connections>
                         <outlet property="connectedToLabel" destination="W9g-JZ-dqJ" id="9Ao-3R-wpT"/>
                         <outlet property="receivedTextField" destination="iLK-9T-RC6" id="JV5-YW-It7"/>

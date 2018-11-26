@@ -13,6 +13,7 @@
 		1A385A321AFE302600C35C5F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A385A2F1AFE302600C35C5F /* Main.storyboard */; };
 		1A8436071B01FD1A00BA0556 /* BonjourClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8436061B01FD1A00BA0556 /* BonjourClient.swift */; };
 		1AF475601B04C92400E84914 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF4755F1B04C92400E84914 /* GCDAsyncSocket.m */; };
+		AA7C142421ACBF8E00A55490 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA7C142321ACBF8E00A55490 /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		1A8436061B01FD1A00BA0556 /* BonjourClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BonjourClient.swift; path = "bonjour-demo-ios/BonjourClient.swift"; sourceTree = SOURCE_ROOT; };
 		1AF4755E1B04C92400E84914 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = SOURCE_ROOT; };
 		1AF4755F1B04C92400E84914 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = SOURCE_ROOT; };
+		AA7C142321ACBF8E00A55490 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "bonjour-demo-ios/Images.xcassets"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 				1A385A2D1AFE302600C35C5F /* LaunchScreen.xib */,
 				1A385A2F1AFE302600C35C5F /* Main.storyboard */,
 				1A385A281AFE301E00C35C5F /* ViewController.swift */,
+				AA7C142321ACBF8E00A55490 /* Images.xcassets */,
 			);
 			name = "bonjour-demo-ios";
 			path = "Objects Context Demo";
@@ -140,6 +143,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA7C142421ACBF8E00A55490 /* Images.xcassets in Resources */,
 				1A385A321AFE302600C35C5F /* Main.storyboard in Resources */,
 				1A385A311AFE302600C35C5F /* LaunchScreen.xib in Resources */,
 			);

@@ -22,7 +22,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.21176470589999999" green="0.27058823529999998" blue="0.30980392159999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Answer a Question" id="I1R-lj-z7v"/>
+                    <tabBarItem key="tabBarItem" title="Answer a Question" id="I1R-lj-z7v">
+                        <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fYU-Tf-w08" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -42,7 +44,7 @@
                         <color key="backgroundColor" red="0.21176470589999999" green="0.27058823529999998" blue="0.30980392159999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Select a Class" id="c8O-Rk-blf">
-                        <color key="badgeColor" red="0.18823529410000001" green="0.83529411760000005" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="66E-Fc-BEG" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -60,6 +62,14 @@
                         <color key="tintColor" red="0.18823529410000001" green="0.83529411760000005" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <color key="barTintColor" red="0.21176470589999999" green="0.27058823529999998" blue="0.30980392159999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <color key="selectedImageTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" red="0.18823529410000001" green="0.83529411760000005" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="unselectedItemTintColor">
+                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </tabBar>
                     <connections>
                         <segue destination="Ut4-UD-07t" kind="relationship" relationship="viewControllers" id="pHe-2r-zjZ"/>
@@ -142,7 +152,7 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Ask a Question" id="InD-V7-5s5">
-                        <color key="badgeColor" red="0.94117647059999998" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBarItem>
                     <connections>
                         <outlet property="connectedToLabel" destination="W9g-JZ-dqJ" id="9Ao-3R-wpT"/>

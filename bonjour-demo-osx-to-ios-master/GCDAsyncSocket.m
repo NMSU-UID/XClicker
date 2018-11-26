@@ -10,6 +10,11 @@
 // TPS Functional Prototype Demo
 // Thursday, November 29, 2018
 //
+// Adapted by Elena Davidson, Angela Kearns, and Sergio Barray
+// CS 485 User Interface Design
+// TPS Functional Prototype Demo
+// Thursday, November 29, 2018
+//
 //  https://github.com/robbiehanson/CocoaAsyncSocket
 //
 

@@ -9,7 +9,10 @@
 import UIKit
 
 class CourseTableViewController: UITableViewController {
-
+    
+    // MARK: Properties
+    var courses = [Course]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

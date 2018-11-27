@@ -22,7 +22,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.21176470589999999" green="0.27058823529999998" blue="0.30980392159999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Answer a Question" id="I1R-lj-z7v">
+                    <tabBarItem key="tabBarItem" title="Answer a Question" image="icons8-checklist-25" id="I1R-lj-z7v">
                         <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBarItem>
                 </viewController>
@@ -43,7 +43,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.21176470589999999" green="0.27058823529999998" blue="0.30980392159999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Select a Class" id="c8O-Rk-blf">
+                    <tabBarItem key="tabBarItem" title="Select a Class" image="icons8-books-25" id="c8O-Rk-blf">
                         <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBarItem>
                 </viewController>
@@ -154,7 +154,7 @@
                             <constraint firstItem="ufC-TG-GiT" firstAttribute="top" secondItem="pOp-3f-fzJ" secondAttribute="bottom" constant="18" id="mRz-0p-cl1"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Ask a Question" id="InD-V7-5s5">
+                    <tabBarItem key="tabBarItem" title="Ask a Question" image="icons8-ask-question-50" id="InD-V7-5s5">
                         <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
@@ -174,4 +174,9 @@
             <point key="canvasLocation" x="183.19999999999999" y="398.95052473763121"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="icons8-ask-question-50" width="18.75" height="18.75"/>
+        <image name="icons8-books-25" width="18.75" height="18.75"/>
+        <image name="icons8-checklist-25" width="18.75" height="18.75"/>
+    </resources>
 </document>

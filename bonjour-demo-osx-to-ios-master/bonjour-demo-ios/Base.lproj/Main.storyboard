@@ -73,10 +73,10 @@
             </objects>
             <point key="canvasLocation" x="183" y="-272"/>
         </scene>
-        <!--Select a Class-->
+        <!--Add a Course-->
         <scene sceneID="3wU-Fn-6mX">
             <objects>
-                <viewController id="Ut4-UD-07t" sceneMemberID="viewController">
+                <viewController id="Ut4-UD-07t" customClass="ViewController" customModule="bonjour_demo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="lDl-L0-7fZ"/>
                         <viewControllerLayoutGuide type="bottom" id="dJK-4t-Oxo"/>
@@ -84,25 +84,57 @@
                     <view key="view" contentMode="scaleToFill" id="7sM-EL-xT6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Course Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qiz-1u-wpw">
+                                <rect key="frame" x="16" y="72" width="105" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EIB-cl-eQP">
+                                <rect key="frame" x="16" y="139" width="81" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Add Course">
+                                    <color key="titleColor" red="0.18823529411764706" green="0.83529411764705885" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ex - ENGL 211 Technical Communication" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6aM-UA-932">
+                                <rect key="frame" x="16" y="101" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <action selector="nameTextField:" destination="75o-vq-Q7D" eventType="editingDidEnd" id="LSx-ul-8PC"/>
+                                    <action selector="xyz:" destination="75o-vq-Q7D" eventType="editingDidEnd" id="z7m-wa-5uk"/>
+                                </connections>
+                            </textField>
+                        </subviews>
                         <color key="backgroundColor" red="0.21176470589999999" green="0.27058823529999998" blue="0.30980392159999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Select a Class" image="icons8-books-25" id="c8O-Rk-blf">
                         <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBarItem>
-                    <navigationItem key="navigationItem" id="x7b-0t-w29"/>
+                    <navigationItem key="navigationItem" title="Add a Course" id="x7b-0t-w29"/>
+                    <connections>
+                        <outlet property="nameTextField" destination="6aM-UA-932" id="EFd-4q-l7C"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="66E-Fc-BEG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="75o-vq-Q7D" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="913" y="-944"/>
+            <point key="canvasLocation" x="912.79999999999995" y="-944.07796101949032"/>
         </scene>
-        <!--Select a Class-->
+        <!--Select a Course-->
         <scene sceneID="F17-3T-xSO">
             <objects>
                 <navigationController id="fMl-rM-ztj" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Select a Class" selectedImage="icons8-books-25" id="vYF-ue-jUZ"/>
+                    <tabBarItem key="tabBarItem" title="Select a Course" selectedImage="icons8-books-25" id="vYF-ue-jUZ"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="HYw-9i-KJR">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="barTintColor" red="0.21176470589999999" green="0.27058823529999998" blue="0.30980392159999998" alpha="0.90092572770000001" colorSpace="custom" customColorSpace="displayP3"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -368,8 +400,14 @@
                             <outlet property="delegate" destination="Bz4-Fi-K2A" id="esD-s3-lAk"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Select a Class" image="icons8-books-25" id="EDr-qq-LqC"/>
-                    <navigationItem key="navigationItem" title="My Courses" id="6yx-FM-1DE"/>
+                    <tabBarItem key="tabBarItem" title="Select a Course" image="icons8-books-25" id="EDr-qq-LqC"/>
+                    <navigationItem key="navigationItem" title="My Courses" id="6yx-FM-1DE">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="AKW-Uw-19e">
+                            <connections>
+                                <segue destination="Ut4-UD-07t" kind="show" id="sQT-PM-MEq"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <segue destination="Ut4-UD-07t" kind="show" id="Dpd-Wr-AjN"/>
                     </connections>
@@ -386,5 +424,8 @@
         <image name="icons8-books-25" width="18.75" height="18.75"/>
         <image name="icons8-checklist-25" width="18.75" height="18.75"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="sQT-PM-MEq"/>
+    </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.21176470589999999" green="0.27058823529999998" blue="0.30980392159999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>

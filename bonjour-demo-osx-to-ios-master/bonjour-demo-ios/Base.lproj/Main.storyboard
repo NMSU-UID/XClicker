@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="EFm-ac-Yyg">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="tb6-yR-iKP">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -14,8 +14,8 @@
             <objects>
                 <viewController id="UUQ-vC-WL6" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="2TS-wb-PQa"/>
-                        <viewControllerLayoutGuide type="bottom" id="swj-7T-Ida"/>
+                        <viewControllerLayoutGuide type="top" id="ctA-f7-loN"/>
+                        <viewControllerLayoutGuide type="bottom" id="wvG-YH-eMq"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Ksb-b6-XEn">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -35,8 +35,8 @@
             <objects>
                 <viewController id="Ut4-UD-07t" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="paH-og-rdq"/>
-                        <viewControllerLayoutGuide type="bottom" id="TME-Fx-dFE"/>
+                        <viewControllerLayoutGuide type="top" id="lDl-L0-7fZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="dJK-4t-Oxo"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="7sM-EL-xT6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -50,6 +50,93 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="66E-Fc-BEG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="183" y="-944"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="T5z-kf-dyG">
+            <objects>
+                <viewController id="tb6-yR-iKP" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EM6-h4-Pd8"/>
+                        <viewControllerLayoutGuide type="bottom" id="QkR-be-nA1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Bqi-d5-Fro">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VaI-0u-6Dj">
+                                <rect key="frame" x="125" y="370" width="125" height="30"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" button="YES" causesPageTurn="YES"/>
+                                </accessibility>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Let's Get Learning">
+                                    <color key="titleColor" red="0.18823529410000001" green="0.83529411760000005" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </state>
+                                <connections>
+                                    <segue destination="EFm-ac-Yyg" kind="show" id="MF8-3f-ed2"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6JD-fm-1Y4">
+                                <rect key="frame" x="29" y="257" width="84" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ifm-br-F85">
+                                <rect key="frame" x="32" y="311" width="79" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="u9W-V9-vgq">
+                                <rect key="frame" x="146" y="252" width="184" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="184" id="SKm-aY-ABm"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="R60-uP-SbC">
+                                <rect key="frame" x="146" y="306" width="184" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="184" id="lpn-Y6-dlb"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo png" translatesAutoresizingMaskIntoConstraints="NO" id="JaH-TR-9cQ">
+                                <rect key="frame" x="0.0" y="81" width="375" height="161"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="JaH-TR-9cQ" secondAttribute="height" multiplier="240:103" id="I1P-cu-xrz"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.21176470589999999" green="0.27058823529999998" blue="0.30980392159999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ifm-br-F85" firstAttribute="top" secondItem="6JD-fm-1Y4" secondAttribute="bottom" constant="33" id="2nG-2Z-rS4"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="R60-uP-SbC" secondAttribute="trailing" constant="29" id="6A8-ro-ncG"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="u9W-V9-vgq" secondAttribute="trailing" constant="29" id="Bfk-PH-58R"/>
+                            <constraint firstItem="6JD-fm-1Y4" firstAttribute="top" secondItem="JaH-TR-9cQ" secondAttribute="bottom" constant="15" id="DKY-GN-swL"/>
+                            <constraint firstItem="R60-uP-SbC" firstAttribute="top" secondItem="u9W-V9-vgq" secondAttribute="bottom" constant="24" id="IXv-qv-Zp2"/>
+                            <constraint firstItem="ifm-br-F85" firstAttribute="leading" secondItem="Bqi-d5-Fro" secondAttribute="leadingMargin" constant="16" id="Idm-VA-3KC"/>
+                            <constraint firstAttribute="trailing" secondItem="JaH-TR-9cQ" secondAttribute="trailing" id="Tyf-gq-Qsa"/>
+                            <constraint firstItem="JaH-TR-9cQ" firstAttribute="top" secondItem="EM6-h4-Pd8" secondAttribute="bottom" constant="61" id="XCU-Yl-TT0"/>
+                            <constraint firstItem="VaI-0u-6Dj" firstAttribute="top" secondItem="R60-uP-SbC" secondAttribute="bottom" constant="34" id="Yoo-pW-CLy"/>
+                            <constraint firstItem="R60-uP-SbC" firstAttribute="top" secondItem="u9W-V9-vgq" secondAttribute="bottom" constant="24" id="cGE-VC-3KR"/>
+                            <constraint firstItem="u9W-V9-vgq" firstAttribute="top" secondItem="JaH-TR-9cQ" secondAttribute="bottom" constant="10" id="ejO-OC-BrW"/>
+                            <constraint firstItem="JaH-TR-9cQ" firstAttribute="leading" secondItem="Bqi-d5-Fro" secondAttribute="leading" id="iHi-8n-gOc"/>
+                            <constraint firstItem="ifm-br-F85" firstAttribute="top" secondItem="6JD-fm-1Y4" secondAttribute="bottom" constant="33" id="my0-Y4-1EV"/>
+                            <constraint firstItem="6JD-fm-1Y4" firstAttribute="leading" secondItem="Bqi-d5-Fro" secondAttribute="leadingMargin" constant="13" id="pGe-ma-cGc"/>
+                            <constraint firstItem="VaI-0u-6Dj" firstAttribute="centerX" secondItem="Bqi-d5-Fro" secondAttribute="centerX" id="st9-WF-h1J"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jda-Pi-0CQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2012" y="127.28635682158921"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="7rG-d2-z4h">
@@ -89,8 +176,8 @@
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="bonjour_demo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
-                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                        <viewControllerLayoutGuide type="top" id="rx5-jT-bSj"/>
+                        <viewControllerLayoutGuide type="bottom" id="Awl-g0-fCA"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -175,8 +262,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Logo png" width="600" height="282"/>
         <image name="icons8-ask-question-50" width="18.75" height="18.75"/>
         <image name="icons8-books-25" width="18.75" height="18.75"/>
         <image name="icons8-checklist-25" width="18.75" height="18.75"/>
     </resources>
+    <color key="tintColor" red="0.21176470589999999" green="0.27058823529999998" blue="0.30980392159999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>

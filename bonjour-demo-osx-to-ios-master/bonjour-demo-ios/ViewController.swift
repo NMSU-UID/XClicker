@@ -14,6 +14,10 @@ import UIKit
 
 class ViewController: UIViewController, BonjourClientDelegate {
     
+    // MARK: Properties
+    @IBOutlet weak var nameTextField: UITextField! 
+    @IBOutlet weak var saveButton: UIBarButtonItem!
+    
     var bonjourClient: BonjourClient!
     
     @IBOutlet var toSendTextField: UITextField!

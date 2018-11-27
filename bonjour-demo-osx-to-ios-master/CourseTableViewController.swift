@@ -16,34 +16,36 @@ class CourseTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        loadSampleCourses()
     }
 
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        return courses.count
     }
 
-    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
+        
+        // Table view cells are reused and should be dequeued using a cell identifier.
+        let cellIdentifier = "CourseTableViewCell"
+        
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? CourseTableViewCell  else {
+            fatalError("The dequeued cell is not an instance of CourseTableViewCell.")
+        }
+        
+        // Fetches the appropriate course for the data source layout.
+        let course = courses[indexPath.row]
+        
+        cell.nameLabel.text = course.name
+        
         return cell
+        
     }
-    */
 
     /*
     // Override to support conditional editing of the table view.
@@ -89,5 +91,25 @@ class CourseTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    //MARK: Private Methods
+    
+    private func loadSampleCourses() {
+        
+        guard let course1 = Course(name: "GEOG 111: Introduction to Geography") else {
+            fatalError("Unable to instantiate course")
+        }
+        
+        guard let course2 = Course(name: "COMM 265: Principles of Communication") else {
+            fatalError("Unable to instantiate course2")
+        }
+        
+        guard let course3 = Course(name: "BIOL 111: Introduction to Biology") else {
+            fatalError("Unable to instantiate course3")
+        }
+        
+        courses += [course1, course2, course3]
+        
+    }
 
 }

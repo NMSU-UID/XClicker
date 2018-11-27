@@ -177,7 +177,7 @@
         <!--Select a Class-->
         <scene sceneID="Exc-ld-t9H">
             <objects>
-                <tableViewController id="Bz4-Fi-K2A" sceneMemberID="viewController">
+                <tableViewController id="Bz4-Fi-K2A" customClass="CourseTableViewController" customModule="bonjour_demo" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="D7R-Mb-MD1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

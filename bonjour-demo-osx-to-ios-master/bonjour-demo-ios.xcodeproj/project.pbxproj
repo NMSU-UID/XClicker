@@ -50,7 +50,6 @@
 		1A4E66E41AFA40D10093398A = {
 			isa = PBXGroup;
 			children = (
-				AA7C142521ADA9B700A55490 /* CourseTableViewCell.swift */,
 				1A4E66EF1AFA40D10093398A /* bonjour-demo-ios */,
 				1A4E66EE1AFA40D10093398A /* Products */,
 				99071FAC8AE491E26C25E01E /* Frameworks */,
@@ -77,6 +76,7 @@
 				1A385A2D1AFE302600C35C5F /* LaunchScreen.xib */,
 				1A385A2F1AFE302600C35C5F /* Main.storyboard */,
 				AA7C142721ADB02400A55490 /* CourseTableViewController.swift */,
+				AA7C142521ADA9B700A55490 /* CourseTableViewCell.swift */,
 				AA7C142921ADB19C00A55490 /* Course.swift */,
 				1A385A281AFE301E00C35C5F /* ViewController.swift */,
 				AA7C142321ACBF8E00A55490 /* Images.xcassets */,

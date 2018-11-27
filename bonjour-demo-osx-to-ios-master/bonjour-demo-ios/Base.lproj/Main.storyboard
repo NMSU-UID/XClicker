@@ -46,10 +46,11 @@
                     <tabBarItem key="tabBarItem" title="Select a Class" image="icons8-books-25" id="c8O-Rk-blf">
                         <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBarItem>
+                    <navigationItem key="navigationItem" id="x7b-0t-w29"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="66E-Fc-BEG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="183" y="-944"/>
+            <point key="canvasLocation" x="181.59999999999999" y="-944.07796101949032"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="7rG-d2-z4h">
@@ -59,7 +60,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="tintColor" red="0.18823529410000001" green="0.83529411760000005" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="barTintColor" red="0.21176470589999999" green="0.27058823529999998" blue="0.30980392159999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <color key="selectedImageTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <userDefinedRuntimeAttributes>
@@ -75,14 +76,14 @@
                         </userDefinedRuntimeAttributes>
                     </tabBar>
                     <connections>
-                        <segue destination="Ut4-UD-07t" kind="relationship" relationship="viewControllers" id="pHe-2r-zjZ"/>
-                        <segue destination="UUQ-vC-WL6" kind="relationship" relationship="viewControllers" id="Uab-oW-5Ka"/>
-                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="viewControllers" id="77H-SJ-hhs"/>
+                        <segue destination="Bz4-Fi-K2A" kind="relationship" relationship="viewControllers" id="xqJ-gO-0bm"/>
+                        <segue destination="UUQ-vC-WL6" kind="relationship" relationship="viewControllers" id="mdl-Jj-VS3"/>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="viewControllers" id="Ab3-T8-rMs"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a4Z-yB-Obu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1201" y="128"/>
+            <point key="canvasLocation" x="-1482" y="-272"/>
         </scene>
         <!--Ask a Question-->
         <scene sceneID="ufC-wZ-h7g">
@@ -172,6 +173,40 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="183.19999999999999" y="398.95052473763121"/>
+        </scene>
+        <!--Select a Class-->
+        <scene sceneID="Exc-ld-t9H">
+            <objects>
+                <tableViewController id="Bz4-Fi-K2A" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="D7R-Mb-MD1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="bFh-Se-w9H">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bFh-Se-w9H" id="IyV-xU-z5e">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.21176470589999999" green="0.27058823529999998" blue="0.30980392159999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" red="0.33972762039999999" green="0.4374171275" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Bz4-Fi-K2A" id="xlJ-fi-Gtl"/>
+                            <outlet property="delegate" destination="Bz4-Fi-K2A" id="esD-s3-lAk"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Select a Class" image="icons8-books-25" id="EDr-qq-LqC"/>
+                    <connections>
+                        <segue destination="Ut4-UD-07t" kind="show" id="Dpd-Wr-AjN"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QOc-qx-3rj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-593" y="-944"/>
         </scene>
     </scenes>
     <resources>

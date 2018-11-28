@@ -19,6 +19,7 @@ class ViewController: UIViewController, BonjourClientDelegate {
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var courseNameLabel: UILabel!
     
+    @IBOutlet var receivedTextField: UITextField!
     
     @IBOutlet weak var saveButton: UIBarButtonItem!
     
@@ -54,13 +55,23 @@ class ViewController: UIViewController, BonjourClientDelegate {
     
     @IBOutlet var toSendTextField: UITextField!
     @IBOutlet var sendButton: UIButton!
-    @IBOutlet var receivedTextField: UITextField!
     @IBOutlet var connectedToLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.bonjourClient = BonjourClient()
         self.bonjourClient.delegate = self
+    }
+    
+    @IBAction func change(_ sender: Any) {
+        self.performSegue(withIdentifier: "segue", sender: nil)
+    }
+    override func prepare(for segue: UIStoryboardSegue,
+                 sender: Any?){
+        var DestViewController : AnswerView = segue.destination as! AnswerView
+        DestViewController.quizText = receivedTextField.text!
+        print("breakpoint")
+        print(receivedTextField.text!)
     }
     
     func connectedTo(_ socket: GCDAsyncSocket!) {
@@ -73,6 +84,8 @@ class ViewController: UIViewController, BonjourClientDelegate {
     
     func handleBody(_ body: NSString?) {
         self.receivedTextField.text = body as? String
+        
+        //print(receivedTextField.text!)
     }
 
     func handleHeader(_ header: UInt) {

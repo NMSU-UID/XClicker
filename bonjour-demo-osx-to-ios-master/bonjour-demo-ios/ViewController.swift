@@ -14,6 +14,12 @@ import UIKit
 import os.log
 
 class ViewController: UIViewController, UITextFieldDelegate, BonjourClientDelegate {
+    func handleBody(_ body: NSString?) {
+        self.receivedTextField.text = body as? String
+        
+        quizAlert()
+    }
+    
     
     // MARK: Properties
     @IBOutlet weak var nameTextField: UITextField!
@@ -44,9 +50,15 @@ class ViewController: UIViewController, UITextFieldDelegate, BonjourClientDelega
         self.bonjourClient.delegate = self
     }
     
-    @IBAction func change(_ sender: Any) {
-        self.performSegue(withIdentifier: "segue", sender: nil)
+    @IBAction func quizAlert() {
+        print("Hello, World")
+        let alertController = UIAlertController(title: "New Quiz Started", message: "Click OK to go to quiz", preferredStyle: .alert)
+        alertController.addAction(UIAlertAction(title:"OK", style: .default, handler:  { action in self.performSegue(withIdentifier: "Open Quiz", sender: self) }))
+    
+        present(alertController, animated: true, completion: nil)
     }
+
+
     
     override func prepare(for segue: UIStoryboardSegue,
                  sender: Any?){
@@ -83,11 +95,7 @@ class ViewController: UIViewController, UITextFieldDelegate, BonjourClientDelega
         self.connectedToLabel.text = "Disconnected"
     }
     
-    func handleBody(_ body: NSString?) {
-        self.receivedTextField.text = body as? String
-        
-        //print(receivedTextField.text!)
-    }
+   
 
     func handleHeader(_ header: UInt) {
         
@@ -96,6 +104,14 @@ class ViewController: UIViewController, UITextFieldDelegate, BonjourClientDelega
     @IBAction func sendText() {
         if let data = self.toSendTextField.text!.data(using: String.Encoding.utf8) {
             self.bonjourClient.send(data)
+            if self.toSendTextField.text! != ""{
+                let alertController = UIAlertController(title: "Message Sent", message:
+                    self.toSendTextField.text, preferredStyle: UIAlertControllerStyle.alert)
+                alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.default,handler: nil))
+            
+                self.present(alertController, animated: true, completion: nil)
+                self.toSendTextField.text = ""
+            }
         }
     }
     

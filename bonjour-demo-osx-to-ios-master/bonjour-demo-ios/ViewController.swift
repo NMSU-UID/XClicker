@@ -36,9 +36,6 @@ class ViewController: UIViewController, UITextFieldDelegate, BonjourClientDelega
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Handle the text field’s user input through delegate callbacks.
-        nameTextField.delegate = self
-        
         // Handle the Bonjour input.
         self.bonjourClient = BonjourClient()
         self.bonjourClient.delegate = self

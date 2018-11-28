@@ -86,7 +86,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ex - ENGL 211 Technical Communication" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6aM-UA-932">
-                                <rect key="frame" x="16" y="57" width="343" height="30"/>
+                                <rect key="frame" x="16" y="101" width="343" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
@@ -96,7 +96,7 @@
                                 </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Course Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qiz-1u-wpw">
-                                <rect key="frame" x="16" y="28" width="105" height="21"/>
+                                <rect key="frame" x="16" y="72" width="105" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -409,9 +409,7 @@
                     <navigationItem key="navigationItem" title="My Courses" id="6yx-FM-1DE">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="AKW-Uw-19e">
                             <connections>
-                                <segue destination="Ut4-UD-07t" kind="popoverPresentation" popoverAnchorBarButtonItem="AKW-Uw-19e" id="dFJ-Cq-CGQ">
-                                    <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
-                                </segue>
+                                <segue destination="Ut4-UD-07t" kind="show" id="htL-qX-rCB"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

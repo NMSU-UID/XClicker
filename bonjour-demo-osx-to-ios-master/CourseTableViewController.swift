@@ -92,23 +92,32 @@ class CourseTableViewController: UITableViewController {
     }
     */
     
+    // MARK: Actions
+    
+    @IBAction func unwindToCourseList(sender: UIStoryboardSegue) {
+        if let sourceViewController = sender.source as? ViewController, let course = sourceViewController.course {
+            
+            // Add a new meal.
+            let newIndexPath = IndexPath(row: courses.count, section: 0)
+            
+            courses.append(course)
+            tableView.insertRows(at: [newIndexPath], with: .automatic)
+        }
+    }
+    
     //MARK: Private Methods
     
     private func loadSampleCourses() {
         
-        guard let course1 = Course(name: "GEOG 111: Introduction to Geography") else {
-            fatalError("Unable to instantiate course")
+        guard let course1 = Course(name: "BIOL 111: Introduction to Biology") else {
+            fatalError("Unable to instantiate course1")
         }
         
         guard let course2 = Course(name: "COMM 265: Principles of Communication") else {
             fatalError("Unable to instantiate course2")
         }
         
-        guard let course3 = Course(name: "BIOL 111: Introduction to Biology") else {
-            fatalError("Unable to instantiate course3")
-        }
-        
-        courses += [course1, course2, course3]
+        courses += [course1, course2]
         
     }
 

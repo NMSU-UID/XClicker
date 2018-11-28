@@ -129,6 +129,9 @@
                     <navigationItem key="navigationItem" title="Add a Course" id="x7b-0t-w29">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="h25-9T-Bu4">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="cancel:" destination="Ut4-UD-07t" id="HoZ-ca-hAf"/>
+                            </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="4MO-6j-2NT">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

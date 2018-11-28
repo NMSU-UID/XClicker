@@ -371,7 +371,7 @@
                                     <color key="titleColor" red="0.94117647059999998" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="UUQ-vC-WL6" kind="show" id="k7E-QK-sfL"/>
+                                    <segue destination="UUQ-vC-WL6" kind="show" identifier="Open Quiz" id="k7E-QK-sfL"/>
                                 </connections>
                             </button>
                         </subviews>

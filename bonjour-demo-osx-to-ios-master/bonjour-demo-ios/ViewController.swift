@@ -47,12 +47,32 @@ class ViewController: UIViewController, UITextFieldDelegate, BonjourClientDelega
     @IBAction func change(_ sender: Any) {
         self.performSegue(withIdentifier: "segue", sender: nil)
     }
+    
     override func prepare(for segue: UIStoryboardSegue,
                  sender: Any?){
-        var DestViewController : AnswerView = segue.destination as! AnswerView
-        DestViewController.quizText = receivedTextField.text!
-        print("breakpoint")
-        print(receivedTextField.text!)
+        if segue.identifier == "Open Quiz"{
+            let DestViewController : AnswerView = segue.destination as! AnswerView
+            DestViewController.quizText = receivedTextField.text!
+            print("breakpoint")
+            print(receivedTextField.text!)
+        } else {
+            super.prepare(for: segue, sender: sender)
+            
+            // Configure the destination view controller only when the save button is pressed.
+            guard let button = sender as? UIBarButtonItem, button === saveButton else {
+                if #available(iOS 10.0, *) {
+                    os_log("The save button was not pressed, cancelling", log: OSLog.default, type: .debug)
+                } else {
+                    // Fallback on earlier versions
+                }
+                return
+            }
+            
+            let name = nameTextField.text ?? ""
+            
+            // Set the meal to be passed to MealTableViewController after the unwind segue.
+            course = Course(name: name)
+        }
     }
     
     func connectedTo(_ socket: GCDAsyncSocket!) {
@@ -95,7 +115,7 @@ class ViewController: UIViewController, UITextFieldDelegate, BonjourClientDelega
     
     // This method lets you configure a view controller before it's presented.
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    /*override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         super.prepare(for: segue, sender: sender)
         
@@ -113,8 +133,7 @@ class ViewController: UIViewController, UITextFieldDelegate, BonjourClientDelega
         
         // Set the meal to be passed to MealTableViewController after the unwind segue.
         course = Course(name: name)
-    }
+    }*/
     
     // MARK: Actions
 }
-

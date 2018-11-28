@@ -11,13 +11,45 @@
 //
 
 import UIKit
+import os.log
 
 class ViewController: UIViewController, BonjourClientDelegate {
     
     // MARK: Properties
-    @IBOutlet weak var nameTextField: UITextField! 
+    @IBOutlet weak var nameTextField: UITextField!
+    @IBOutlet weak var courseNameLabel: UILabel!
+    
+    
     @IBOutlet weak var saveButton: UIBarButtonItem!
     
+    /* FIX THIS
+    // MARK: Navigation
+    
+    // This method lets you configure a view controller before it's presented.
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        super.prepare(for: segue, sender: sender)
+        
+        // Configure the destination view controller only when the save button is pressed.
+        guard let button = sender as? UIBarButtonItem, button === saveButton else {
+            if #available(iOS 10.0, *) {
+                os_log("The save button was not pressed, cancelling", log: OSLog.default, type: .debug)
+            } else {
+                // Fallback on earlier versions
+            }
+            return
+        }
+        
+        let name = nameTextField.text ?? ""
+        
+        // Set the meal to be passed to MealTableViewController after the unwind segue.
+        course = Course(name: name)
+    }
+    */
+    
+    // MARK: Actions
+    // PICK UP HERE ***
     var bonjourClient: BonjourClient!
     
     @IBOutlet var toSendTextField: UITextField!

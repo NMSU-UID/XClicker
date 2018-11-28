@@ -103,6 +103,13 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NWN-MH-B1I">
+                                <rect key="frame" x="16" y="139" width="151" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Set Default Label Text">
+                                    <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.21176470589999999" green="0.27058823529999998" blue="0.30980392159999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
@@ -113,8 +120,10 @@
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="4MO-6j-2NT"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="courseNameLabel" destination="Qiz-1u-wpw" id="pDy-L3-RJJ"/>
                         <outlet property="nameTextField" destination="6aM-UA-932" id="EFd-4q-l7C"/>
                         <outlet property="saveButton" destination="4MO-6j-2NT" id="cJw-qz-8j7"/>
+                        <outlet property="setDefaultTableText" destination="NWN-MH-B1I" id="J87-bq-bsU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="66E-Fc-BEG" userLabel="First Responder" sceneMemberID="firstResponder"/>

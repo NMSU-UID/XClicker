@@ -17,6 +17,7 @@
 		AA7C142621ADA9B700A55490 /* CourseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7C142521ADA9B700A55490 /* CourseTableViewCell.swift */; };
 		AA7C142821ADB02400A55490 /* CourseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7C142721ADB02400A55490 /* CourseTableViewController.swift */; };
 		AA7C142A21ADB19C00A55490 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7C142921ADB19C00A55490 /* Course.swift */; };
+		AA7C142E21AF251400A55490 /* AnswerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7C142D21AF251400A55490 /* AnswerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		AA7C142521ADA9B700A55490 /* CourseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseTableViewCell.swift; sourceTree = "<group>"; };
 		AA7C142721ADB02400A55490 /* CourseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseTableViewController.swift; sourceTree = SOURCE_ROOT; };
 		AA7C142921ADB19C00A55490 /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = SOURCE_ROOT; };
+		AA7C142D21AF251400A55490 /* AnswerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AnswerView.swift; path = "bonjour-demo-ios/AnswerView.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 				AA7C142521ADA9B700A55490 /* CourseTableViewCell.swift */,
 				AA7C142921ADB19C00A55490 /* Course.swift */,
 				1A385A281AFE301E00C35C5F /* ViewController.swift */,
+				AA7C142D21AF251400A55490 /* AnswerView.swift */,
 				AA7C142321ACBF8E00A55490 /* Images.xcassets */,
 			);
 			name = "bonjour-demo-ios";
@@ -171,6 +174,7 @@
 				1A8436071B01FD1A00BA0556 /* BonjourClient.swift in Sources */,
 				1A385A291AFE301E00C35C5F /* AppDelegate.swift in Sources */,
 				AA7C142821ADB02400A55490 /* CourseTableViewController.swift in Sources */,
+				AA7C142E21AF251400A55490 /* AnswerView.swift in Sources */,
 				AA7C142621ADA9B700A55490 /* CourseTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

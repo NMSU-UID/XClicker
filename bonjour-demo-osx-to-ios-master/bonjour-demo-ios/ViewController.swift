@@ -104,6 +104,14 @@ class ViewController: UIViewController, UITextFieldDelegate, BonjourClientDelega
     @IBAction func sendText() {
         if let data = self.toSendTextField.text!.data(using: String.Encoding.utf8) {
             self.bonjourClient.send(data)
+            if self.toSendTextField.text! != ""{
+                let alertController = UIAlertController(title: "Message Sent", message:
+                    self.toSendTextField.text, preferredStyle: UIAlertControllerStyle.alert)
+                alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.default,handler: nil))
+            
+                self.present(alertController, animated: true, completion: nil)
+                self.toSendTextField.text = ""
+            }
         }
     }
     

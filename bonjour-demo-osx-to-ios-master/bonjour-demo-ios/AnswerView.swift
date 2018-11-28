@@ -13,7 +13,7 @@ class AnswerView : UIViewController {
     
     @IBOutlet var quizDisplay: UITextField!
     
-    var quizText = String()
+    var quizText = "There is no active quiz at this time...\n\n Please check back later"
     
     override func viewDidLoad() {
         quizDisplay.text = quizText

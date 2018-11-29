@@ -1,15 +1,10 @@
 //
 //  BonjourServer.swift
-//  bonjour-demo-mac
+//  XClicker-1st-prototype
 //
-//  Created by James Zaghini on 14/05/2015.
-//  Copyright (c) 2015 James Zaghini. All rights reserved.
+//  Created by Sergio Baray, Angela Kearns, Elena Davidson
 //
-// Adapted by Elena Davidson, Angela Kearns, and Sergio Barray
-// CS 485 User Interface Design
-// TPS Functional Prototype Demo
-// Thursday, November 29, 2018
-//
+
 
 import Cocoa
 

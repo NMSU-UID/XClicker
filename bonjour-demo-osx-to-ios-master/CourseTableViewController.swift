@@ -42,8 +42,8 @@ class CourseTableViewController: UITableViewController {
         let course = courses[indexPath.row]
         
         cell.nameLabel.text = course.name
-        cell.sectionLabel.text = course.sectionnum
-        cell.professorLabel.text = course.professor
+        cell.sectionLabel.text = "Section: " + course.sectionnum
+        cell.professorLabel.text = "Professor: " + course.professor
         
         return cell
         

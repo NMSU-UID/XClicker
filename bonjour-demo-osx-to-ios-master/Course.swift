@@ -13,10 +13,12 @@ class Course {
     // MARK: Properties
     
     var name: String
+    var sectionnum: String
+    var professor: String
     
     // MARK: Initialization
     
-    init?(name:String) {
+    init?(name:String, sectionnum:String, professor:String) {
         
         // Initialization should fail if there is no name or if the rating is negative.
         if name.isEmpty  {
@@ -25,6 +27,8 @@ class Course {
         
         // Initialize stored properties
         self.name = name
+        self.sectionnum = sectionnum
+        self.professor = professor
         
     }
 }

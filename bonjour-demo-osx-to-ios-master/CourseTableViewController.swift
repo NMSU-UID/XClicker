@@ -42,6 +42,8 @@ class CourseTableViewController: UITableViewController {
         let course = courses[indexPath.row]
         
         cell.nameLabel.text = course.name
+        cell.sectionLabel.text = course.sectionnum
+        cell.professorLabel.text = course.professor
         
         return cell
         
@@ -97,7 +99,7 @@ class CourseTableViewController: UITableViewController {
     @IBAction func unwindToCourseList(sender: UIStoryboardSegue) {
         if let sourceViewController = sender.source as? ViewController, let course = sourceViewController.course {
             
-            // Add a new meal.
+            // Add a new course.
             let newIndexPath = IndexPath(row: courses.count, section: 0)
             
             courses.append(course)
@@ -109,11 +111,11 @@ class CourseTableViewController: UITableViewController {
     
     private func loadSampleCourses() {
         
-        guard let course1 = Course(name: "BIOL 111: Introduction to Biology") else {
+        guard let course1 = Course(name: "BIOL 111: Introduction to Biology", sectionnum: "M01", professor: "James") else {
             fatalError("Unable to instantiate course1")
         }
         
-        guard let course2 = Course(name: "COMM 265: Principles of Communication") else {
+        guard let course2 = Course(name: "COMM 265: Principles of Communication", sectionnum: "M12", professor: "Morgan") else {
             fatalError("Unable to instantiate course2")
         }
         

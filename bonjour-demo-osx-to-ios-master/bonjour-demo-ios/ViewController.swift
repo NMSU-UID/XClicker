@@ -23,11 +23,12 @@ class ViewController: UIViewController, UITextFieldDelegate, BonjourClientDelega
     
     // MARK: Properties
     @IBOutlet weak var nameTextField: UITextField!
+    @IBOutlet weak var sectionTextField: UITextField!
+    @IBOutlet weak var professorTextField: UITextField!
+    
     @IBOutlet weak var courseNameLabel: UILabel!
-
     
     @IBOutlet var receivedTextField: UITextField!
-    
     @IBOutlet weak var saveButton: UIBarButtonItem!
     
     /*
@@ -81,9 +82,11 @@ class ViewController: UIViewController, UITextFieldDelegate, BonjourClientDelega
             }
             
             let name = nameTextField.text ?? ""
+            let sectionnum = sectionTextField.text ?? ""
+            let professor = professorTextField.text ?? ""
             
             // Set the meal to be passed to MealTableViewController after the unwind segue.
-            course = Course(name: name)
+            course = Course(name: name, sectionnum: sectionnum, professor: professor)
         }
     }
     

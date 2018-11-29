@@ -12,6 +12,8 @@ class CourseTableViewCell: UITableViewCell {
     
     // MARK: Properties
     @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var sectionLabel: UILabel!
+    @IBOutlet weak var professorLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
